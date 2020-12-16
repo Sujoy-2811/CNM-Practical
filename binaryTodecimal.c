@@ -22,7 +22,7 @@ int main()
     printf("Enter binary number : ");
     scanf("%d", &a);
     binarToDecimal(a);
-    printf("\nNumber in binary : %d", decimal);
+    printf("\nNumber in decimal : %d", decimal);
     getch();
     return 0;
 }
