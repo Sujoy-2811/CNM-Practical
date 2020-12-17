@@ -7,7 +7,7 @@ int num, frac[8] = {0}, bits[23] = {0};
 
 int decimalToBinary(int n)
 {
-    int bits[32];
+    // int bits[32];
 
     int i = 0;
     while (n > 0)
