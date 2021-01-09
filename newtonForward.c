@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <conio.h>
 #include <math.h>
 int fact(int);
 int main()
@@ -29,8 +30,9 @@ int main()
         printf("\n");
         for (j = 0; j < n + 1 - i; j++)
         {
-            printf("\t%.4f", arr[i][j]);
+            printf("\t%.2f", arr[i][j]);
         }
+        printf("\n");
     }
     //Take the value of x for f(x)
     printf("\nEnter the value x for function f(x):");
@@ -44,7 +46,9 @@ int main()
         px = px * (p - (i - 1));
         y = y + (arr[0][i + 1] * px) / fact(i);
     }
-    printf("\nthe value of function at x=%f is %f", x, y);
+    printf("\nthe value of function at x=%.2f is %.2f", x, y);
+    getch();
+    return 0;
 }
 int fact(int n)
 {

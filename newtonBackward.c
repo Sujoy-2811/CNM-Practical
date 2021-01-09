@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <conio.h>
 #include <math.h>
 int fact(int);
 int main()
@@ -57,6 +58,7 @@ int main()
         y += (arr[n - 1][i + 1] * px) / fact(i);
     }
     printf("\nthe value of function at x=%.3f is %.3f", x, y);
+    getch();
     return 0;
 }
 int fact(int n)

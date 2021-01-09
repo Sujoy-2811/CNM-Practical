@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <conio.h>
 #include <stdlib.h>
 #include <math.h>
 int fact(int);
@@ -59,5 +60,6 @@ int main()
         p *= x - arr[i][0];
     }
     printf("\nthe value of function at x=%.3f is %.3f", x, y);
+    getch();
     return 0;
 }
