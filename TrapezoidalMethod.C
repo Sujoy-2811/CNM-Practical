@@ -17,13 +17,13 @@ int main()
     int i, intervals, coeff[20] = {0}, deg;
 
     //Modication
-    printf("\n\n  Enter the Highest Order: ");
+    printf("\n\n  Enter the Highest Order of Equation: ");
     scanf("%d", &deg);
 
     //take eqn
     for (i = deg; i >= 0; i--)
     {
-        printf("  Enter Coeffecient of x%d: ", i);
+        printf("  Enter Coeffecient of X^%d: ", i);
         scanf("%d", &coeff[i]);
     }
 
@@ -35,8 +35,7 @@ int main()
             printf("%dX^%d + ", coeff[i], i);
     }
 
-    printf("%d\n", coeff[0]);
-    printf("\n");
+    printf("%d\n\n", coeff[0]);
 
     //taking n, a,b
     printf("Enter the number of intervals:");
