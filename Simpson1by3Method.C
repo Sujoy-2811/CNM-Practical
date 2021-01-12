@@ -33,7 +33,16 @@ int main()
     for (int i = deg; i > 0; i--)
     {
         if (coeff[i] != 0)
-            printf("%dX^%d + ", coeff[i], i);
+        {
+            printf("%dX^%d ", coeff[i], i);
+            if (coeff[i - 1] >= 0 && i > 1)
+                printf("+ ");
+            else if (i == 1)
+            {
+                if (coeff[0] >= 0)
+                    printf("+ ");
+            }
+        }
     }
 
     printf("%d\n\n", coeff[0]);
